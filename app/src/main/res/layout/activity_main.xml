@@ -10,8 +10,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:text="Enter nuber of your subs"
+        android:layout_marginTop="250dp"
+        android:text="I can show your income"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,8 +24,8 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="num of subs"
-        android:inputType="number"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -43,6 +43,22 @@
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/edValue"
         app:layout_constraintStart_toStartOf="@+id/edValue"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Your PassWord?"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/edValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edValue"
         app:layout_constraintTop_toBottomOf="@+id/edValue" />
 
     <Button
@@ -50,13 +66,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:shadowColor="#F40000"
-        android:text="Enter"
+        android:text="Show INCOME"
         android:textColor="#FFFFFF"
         android:textColorHint="#FF0000"
         android:textColorLink="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/edValue"
         app:layout_constraintStart_toStartOf="@+id/edValue"
         app:layout_constraintTop_toBottomOf="@+id/tvResult"
         app:rippleColor="#933A3A"
         app:strokeColor="#CF0000" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
