@@ -7,42 +7,56 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txResult"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="324 and 34"
+        android:layout_marginTop="300dp"
+        android:text="Enter nuber of your subs"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/b1"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edValue"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Addition"
-        app:layout_constraintEnd_toEndOf="@+id/txResult"
-        app:layout_constraintStart_toStartOf="@+id/txResult"
-        app:layout_constraintTop_toBottomOf="@+id/txResult" />
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="num of subs"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/teal_200"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/edValue"
+        app:layout_constraintStart_toStartOf="@+id/edValue"
+        app:layout_constraintTop_toBottomOf="@+id/edValue" />
 
     <Button
-        android:id="@+id/b2"
-        android:layout_width="wrap_content"
+        android:id="@+id/btResult"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Subtraction"
-        app:layout_constraintEnd_toEndOf="@+id/b1"
-        app:layout_constraintStart_toStartOf="@+id/b1"
-        app:layout_constraintTop_toBottomOf="@+id/b1" />
-
-    <Button
-        android:id="@+id/b3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Multiplication"
-        app:layout_constraintEnd_toEndOf="@+id/b2"
-        app:layout_constraintStart_toStartOf="@+id/b2"
-        app:layout_constraintTop_toBottomOf="@+id/b2" />
+        android:shadowColor="#F40000"
+        android:text="Enter"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FF0000"
+        android:textColorLink="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/edValue"
+        app:layout_constraintStart_toStartOf="@+id/edValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult"
+        app:rippleColor="#933A3A"
+        app:strokeColor="#CF0000" />
 </androidx.constraintlayout.widget.ConstraintLayout>
