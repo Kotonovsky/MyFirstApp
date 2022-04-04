@@ -10,82 +10,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:text="I can show your income"
-        android:textColor="@color/black"
+        android:text="@string/hello"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edValue"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="Enter your name"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textColor="@color/teal_200"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/edValue"
-        app:layout_constraintStart_toStartOf="@+id/edValue"
-        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
-
-    <EditText
-        android:id="@+id/edPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="Your PassWord?"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textColor="@color/teal_200"
-        app:layout_constraintEnd_toEndOf="@+id/edValue"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edValue"
-        app:layout_constraintTop_toBottomOf="@+id/edValue" />
-
-    <Button
-        android:id="@+id/btResult"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:shadowColor="#F40000"
-        android:text="Show INCOME"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FF0000"
-        android:textColorLink="@color/teal_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edValue"
-        app:layout_constraintStart_toStartOf="@+id/edValue"
-        app:layout_constraintTop_toBottomOf="@+id/tvResult"
-        app:rippleColor="#933A3A"
-        app:strokeColor="#CF0000" />
-
-    <ImageView
-        android:id="@+id/imPhoto"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dula" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
