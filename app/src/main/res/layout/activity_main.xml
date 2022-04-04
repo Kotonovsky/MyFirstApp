@@ -77,4 +77,15 @@
         app:rippleColor="#933A3A"
         app:strokeColor="#CF0000" />
 
+    <ImageView
+        android:id="@+id/imPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dula" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
